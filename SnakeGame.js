@@ -79,7 +79,6 @@ function rand(min,max){
 
 function getType(x,y){
     let g = get(x,y);
-    console.log(g);
     return g.getAttribute("class");
 }
 
@@ -90,7 +89,6 @@ function createFruit(){
         var fruitY = rand(1, height-1);
         if(getType(fruitX, fruitY) == "blank"){
             found = true;
-            console.log('found = true, ', fruitX, fruitY);
         }
     }
     set(fruitX, fruitY, "fruit");
